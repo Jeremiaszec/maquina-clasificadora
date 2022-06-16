@@ -5,56 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- link de mi css -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>conectividad</title>
 </head>
 
 <body class="grayBackground";>
-    <header>
-        <h1>Conectividad</h1>
-        <h2>Configuracion de la conectividad de la maquina clasificadora</h2>
-        <nav>
-            <ul class="flexFeatures"> 
-                <li><a href="../index.html">home</a></li>
-                <li><a href="calibracion.html">calibracion</a></li>
-                <li><a href="visualizacion.html">visualizacion</a></li>
-                <li><a href="solenoides.html">solenoides</a></li>
-            </ul>
-        </nav>
+    <div class="container"></div>
+        
+    <header class="row backgroundMenu">
+        <h1 class="col-4"> Conectividad</h1>
+        <nav class="navbar navbar-expand-lg bg-nav col-8">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menu de navegación</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Opciones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="calibracion.html">Calibración</a></li>
+                      <li><a class="dropdown-item" href="solenoides.html">Solenoides</a></li>
+                      <li><a class="dropdown-item" href="visualizacion.html">Visualización</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <form action="">
-        <fieldset>
-            <legend>Formulario de usuario</legend>
-            <div>
-                <label for="nombre">nombre de usuario</label>
-                <input type="text" name="nombre" placeholder="tu usuario">
-            </div>
-            <div>
-                <label for="mail">completa tu email</label>
-                <input type="email" name="mail">
-            </div>
+        <form action="">
+            <fieldset>
+                <legend>Formulario de usuario</legend>
+                <div>
+                    <label for="nombre">nombre de usuario</label>
+                    <input type="text" name="nombre" placeholder="tu usuario">
+                </div>
+                <div>
+                    <label for="mail">completa tu email</label>
+                    <input type="email" name="mail">
+                </div>
 
-            <div>
-                <label for="modo">modo de operacion</label>
-                <select name="modo" id="">
-                    <option value="modo1">modo 1</option>
-                    <option value="modo2">modo 2</option>
-                    <option value="modo3">modo 3</option>
-                </select>
-            </div>
+                <div>
+                    <label for="modo">modo de operacion</label>
+                    <select name="modo" id="">
+                        <option value="modo1">modo 1</option>
+                        <option value="modo2">modo 2</option>
+                        <option value="modo3">modo 3</option>
+                    </select>
+                </div>
 
-            <div>
-                <input type="submit" value="enviar">
-                <input type="reset" value="restablecer">
-            </div>
-        </fieldset>
-    </form>
+                <div>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="restablecer">
+                </div>
+            </fieldset>
+        </form>
+
+        <footer> 
+            <p>Todos los derechos reservados, author:Jeremias Zec</p> 
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
-
-<footer> 
-    <p>Todos los derechos reservados, author:Jeremias Zec</p> 
-</footer>
-
 </html>

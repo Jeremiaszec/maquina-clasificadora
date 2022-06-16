@@ -4,43 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>visualizacion</title>
 </head>
 
-<body class="applesBackground">
-    <header>
-        <h1>Visualización</h1>
-        <h2 class="opacityBackground">En esta sección se visualizarán las cantidad de bultos procesados y su calibre</h2>
-   
-        <nav>
-            <ul class="flexFeatures"> 
-                <li><a href="../index.html">home</a></li>
-                <li><a href="calibracion.html">calibracion</a></li>
-                <li><a href="conectividad.html">conectividad</a></li>
-                <li><a href="solenoides.html">solenoides</a></li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
+<body class="grayBackground">
+    <div class="container"></div>
+        <header class="row backgroundMenu">
+            <h1 class="col-4"> visualización</h1>
+            <nav class="navbar navbar-expand-lg bg-nav col-8">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu de navegación</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="calibracion.html">Calibración</a></li>
+                        <li><a class="dropdown-item" href="solenoides.html">Solenoides</a></li>
+                        <li><a class="dropdown-item" href="conectividad.html">Conectividad</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
 
-    <div class="gridMedia">
-        <p class="descripcionCosecha opacityBackground">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquam voluptates rerum exercitationem nihil ratione? Similique inventore sed, sunt eius, doloremque esse non impedit voluptas reprehenderit temporibus commodi! Voluptate, facere.</p>
-        
-        <div class="videoCosecha">
-            <iframe  width="360" height="135" src="https://www.youtube.com/embed/ph8zAd1JGUM?start=28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
-        </div>
 
-        <div class="videoEmpaque">
-            <iframe  width="360" height="135" src="https://www.youtube.com/embed/c3JSdUz5Tgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-            
+        <main class="row bg-main">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/153645.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/301997.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/433147.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/753736.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/753918.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </main>
+
+        <footer> 
+            <p>Todos los derechos reservados, author:Jeremias Zec</p> 
+        </footer>
+
     </div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
-
-
-<footer> 
-    <p>Todos los derechos reservados, author:Jeremias Zec</p> 
-</footer>
-
 </html>
